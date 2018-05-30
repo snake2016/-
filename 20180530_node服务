@@ -1,0 +1,14 @@
+node相关
+node服务器特点：
+    node单线程，处理高并发，异步IO，EventLoop，BFF层，适用系统大量调用第三方接口，读写数据库，计算量小
+
+node框架：midway,egg..
+
+web请求流程： node端 content-plugin-router-(midware)-controller-Model
+
+mvc 和mvvm 前后端分离和不分离  前后端代码是不是在一个工程目录下，以及返回的是html 还是data，如果是data，前端需要借助react/vue等框架渲染生成html
+
+多进程模型：nodejs单进程单线程，驱动模式处理并发，对于多核CPU，若仅使用单进程，浪费资源，因此nodejs提供了cluster模块和child_process模块来创建多个子进程，从而提高cpu的利用率。
+
+vpc - (负载均衡) - container - nginx - node
+
